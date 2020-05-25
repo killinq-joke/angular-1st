@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../../services/data.service"
 
 @Component({
   selector: 'app-users',
@@ -11,7 +12,7 @@ export class UsersComponent implements OnInit {
   email: string;
   hobby: hobby;
 
-  constructor() {
+  constructor(private data: DataService) {
     this.name = 'zak';
     this.age = 20;
     this.email = 'zakadmaster@gmail.com';
