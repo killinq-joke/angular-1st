@@ -10,24 +10,24 @@
 </ul>
 <button (click)="onClick()">don't press me</button>
 
-<h1>Emmet</h1>
+<h1>Editer</h1>
 <form action="">
   <div>
-    <label for=""><input type="text" /></label>
+    <label for="nom">Nom<input type="text" [(ngModel)]="name" name="name" /></label>
   </div>
   <div>
-    <label for=""><input type="text" /></label>
+    <label for="age">Age<input type="number" [(ngModel)]="age" name="age"/></label>
   </div>
   <div>
-    <label for=""><input type="text" /></label>
+    <label for="email">Email<input type="email" [(ngModel)]="email" name="email"/></label>
   </div>
   <div>
-    <label for=""><input type="text" /></label>
+    <label for="hobby1">Hobby1<input type="text" [(ngModel)]="hobby.hobby1" name="hobby1"/></label>
   </div>
   <div>
-    <label for=""><input type="text" /></label>
+    <label for="hobby2">Hobby2<input type="text" [(ngModel)]="hobby.hobby2" name="hobby2"/></label>
   </div>
   <div>
-    <label for=""><input type="text" /></label>
+    <label for="hobby3">Hobby3<input type="text" [(ngModel)]="hobby.hobby3" name="hobby3"/></label>
   </div>
 </form>
